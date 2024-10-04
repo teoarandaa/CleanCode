@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BottomSheetView: View {
     let item: MenuItem
-    
+    @AppStorage("isDarkMode") private var isDarkMode = false
     
     var body: some View {
         VStack(alignment: .leading) {

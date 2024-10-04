@@ -26,6 +26,14 @@ struct DescriptionQ27Q28View: View {
                 Text(item.q28)
             }
         }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("\(item.ask14)")
+                    .font(.subheadline)
+                    .bold()
+                    .multilineTextAlignment(.trailing)
+            }
+        }
         .sheet(isPresented: $showingBottomSheet) {
             BottomSheetView(item: MenuItem.example)
                 .presentationDetents(.init([.height(560)]))

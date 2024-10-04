@@ -10,6 +10,7 @@ import SwiftUI
 struct ItemRow: View {
     let item: MenuItem
     let colors: [String: Color] = ["E": .green, "I": .yellow, "D": .red]
+    @AppStorage("isDarkMode") private var isDarkMode = false
     
     var body: some View {
         HStack {

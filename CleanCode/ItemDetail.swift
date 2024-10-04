@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ItemDetail: View {
     let item: MenuItem
+    @AppStorage("isDarkMode") private var isDarkMode = false
     
     var body: some View {
         Text("\(item.ask1)")

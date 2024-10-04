@@ -8,16 +8,22 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some View {
         List {
-            Section("Version") {
-                Text(appVersion!)
+            Section("Language") {
+                Text("Nothing here... for now")
+                    .foregroundStyle(.gray)
+            }
+            Section("Appearance") {
+                Toggle(isOn: $isDarkMode) {
+                    Text("Dark Mode")
+                }
             }
         }
-    }
-    
-    var appVersion: String? {
-        return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
+        .navigationTitle("Settings")
+        .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 

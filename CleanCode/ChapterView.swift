@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChapterView: View {
     let item: MenuItem
+    @AppStorage("isDarkMode") private var isDarkMode = false
     
     var body: some View {
         List {
@@ -61,6 +62,7 @@ struct ChapterView: View {
                 Text("\(item.ask16)")
             }
         }
+        .navigationTitle("Items")
     }
 }
 

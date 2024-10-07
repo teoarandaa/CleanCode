@@ -12,7 +12,7 @@ struct OthersView: View {
     
     var body: some View {
         List {
-            Section("Links") {
+            Section("Social media") {
                 Button("CleanCode website") {
                     UIApplication.shared.open(URL(string: "https://www.example.com")!)
                 }
@@ -44,11 +44,10 @@ struct OthersView: View {
     }
     
     func shareContent() {
-        let items = ["¡CleanCode!", "https://www.apple.com/es/app-store/"] // Contenido que deseas compartir
+        let items = ["¡CleanCode!", "https://www.apple.com/es/app-store/"]
             
         let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
             
-        // Obtener el controlador de vista raíz usando UIWindowScene
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
             if let topController = windowScene.windows.first?.rootViewController {
                 topController.present(activityVC, animated: true, completion: nil)

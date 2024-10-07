@@ -16,6 +16,9 @@ struct SettingsView: View {
     
     var body: some View {
         List {
+            Section("Notifications") {
+                Text("Here goes the toggle ")
+            }
             Section("Appearance") {
                 Toggle(isOn: $isDarkMode) {
                     Text("Dark Mode")

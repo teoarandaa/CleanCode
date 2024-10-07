@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import UIKit
 
 struct OthersView: View {
     @AppStorage("isDarkMode") private var isDarkMode = false

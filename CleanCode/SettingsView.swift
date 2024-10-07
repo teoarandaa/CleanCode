@@ -9,21 +9,49 @@ import SwiftUI
 
 struct SettingsView: View {
     @AppStorage("isDarkMode") private var isDarkMode = false
+    @State private var selection: String = "English"
+    let filterOptions: [String] = [
+        "Español", "Català", "English", "Deutsch", "Français", "Italiano", "Nederlands", "Polski", "Português", "Русский"
+    ]
     
     var body: some View {
         List {
             Section("Language") {
-                Text("Nothing here... for now")
-                    .foregroundStyle(.gray)
+                Picker(
+                    selection: $selection,
+                    label:
+                        Text("Language")
+                    ,
+                    content: {
+                        ForEach(filterOptions, id: \.self) { option in
+                            Text(option)
+                                .tag(option)
+                        }
+                })
             }
             Section("Appearance") {
                 Toggle(isOn: $isDarkMode) {
                     Text("Dark Mode")
                 }
             }
+            Section("Others") {
+                NavigationLink(destination: FaqView()) {
+                    Text("FAQ (Frequently Asked Questions")
+                }
+                Button(action: {
+                    sendEmail(to: "teoap2005@gmail.com")
+                }) {
+                    Text("CleanCode support")
+                }
+            }
         }
         .navigationTitle("Settings")
         .preferredColorScheme(isDarkMode ? .dark : .light)
+    }
+    func sendEmail(to address: String) {
+        if let url = URL(string: "mailto:\(address)") {
+            UIApplication.shared.open(url)
+        }
     }
 }
 

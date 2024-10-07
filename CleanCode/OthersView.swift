@@ -13,15 +13,13 @@ struct OthersView: View {
     
     var body: some View {
         List {
-            Section("About us") {
-                Text("CleanCode aims to be the solution to poorly written programs. As a CleanCode developer, I can’t stand spending hours trying to understand someone else’s code, and that’s partly where the idea for this app comes from.\nNo more confusing code!")
-            }
-            Section("Website") {
-                Button("CleanCode web") {
+            Section("Links") {
+                Button("CleanCode website") {
                     UIApplication.shared.open(URL(string: "https://www.example.com")!)
                 }
-            }
-            Section("Share") {
+                Button("CleanCode Instagram") {
+                    UIApplication.shared.open(URL(string: "https://www.example.com")!)
+                }
                 Button(action: {
                     shareContent()
                 }) {
@@ -31,6 +29,9 @@ struct OthersView: View {
             Section("Tip jar") {
                 Text("Nothing here... for now")
                     .foregroundStyle(.gray)
+            }
+            Section("Agreements") {
+                Text("Thanks to all my friends and my girlfriend for being my support!")
             }
             Section("Version") {
                 Text(appVersion!)

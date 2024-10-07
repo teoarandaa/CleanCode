@@ -16,19 +16,6 @@ struct SettingsView: View {
     
     var body: some View {
         List {
-            Section("Language") {
-                Picker(
-                    selection: $selection,
-                    label:
-                        Text("Language")
-                    ,
-                    content: {
-                        ForEach(filterOptions, id: \.self) { option in
-                            Text(option)
-                                .tag(option)
-                        }
-                })
-            }
             Section("Appearance") {
                 Toggle(isOn: $isDarkMode) {
                     Text("Dark Mode")

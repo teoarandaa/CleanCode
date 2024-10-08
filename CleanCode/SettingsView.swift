@@ -10,14 +10,13 @@ import SwiftUI
 struct SettingsView: View {
     @AppStorage("isDarkMode") private var isDarkMode = false
     @State private var selection: String = "English"
-    let filterOptions: [String] = [
-        "Español", "Català", "English", "Deutsch", "Français", "Italiano", "Nederlands", "Polski", "Português", "Русский"
-    ]
     
     var body: some View {
         List {
             Section("Notifications") {
-                Text("Here goes the toggle for notifications")
+                Toggle (isOn: $isDarkMode){
+                    Text("Push notifications")
+                }
             }
             Section("Appearance") {
                 Toggle(isOn: $isDarkMode) {

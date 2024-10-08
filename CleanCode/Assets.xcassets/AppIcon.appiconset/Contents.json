@@ -1,6 +1,31 @@
 {
   "images" : [
     {
+      "filename" : "cleancode_resized.png",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "cleancode_resized_dark.png",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "tinted"
+        }
+      ],
+      "filename" : "cleancode_resized_tint.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"

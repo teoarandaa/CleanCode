@@ -14,7 +14,7 @@ struct FAQItem: Identifiable {
 }
 
 struct FAQView: View {
-    @State private var expandedItem: UUID? // Variable para rastrear qué elemento está expandido
+    @State private var expandedItem: UUID?
     let faqItems: [FAQItem] = [
         FAQItem(question: "How can I contact support?", answer: "You can contact support by sending an email to support@example.com."),
         FAQItem(question: "What payment methods do you accept?", answer: "We accept major credit cards and Apple Pay for online purchases and the tip jar."),

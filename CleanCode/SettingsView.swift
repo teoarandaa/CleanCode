@@ -20,7 +20,7 @@ struct SettingsView: View {
             }
             Section("Appearance") {
                 Toggle(isOn: $isDarkMode) {
-                    Text("Dark Mode")
+                    Text("Dark mode")
                 }
             }
             Section("Others") {
@@ -30,7 +30,7 @@ struct SettingsView: View {
                 Button(action: {
                     sendEmail(to: "teoap2005@gmail.com")
                 }) {
-                    Text("CleanCode support")
+                    Text("CleanCode Support")
                 }
             }
         }

@@ -17,7 +17,7 @@ struct OthersView: View {
                     UIApplication.shared.open(URL(string: "https://www.example.com")!)
                 }
                 Button("CleanCode Instagram") {
-                    UIApplication.shared.open(URL(string: "https://www.example.com")!)
+                    UIApplication.shared.open(URL(string: "https://www.instagram.com/cleancode.app/")!)
                 }
                 Button(action: {
                     shareContent()

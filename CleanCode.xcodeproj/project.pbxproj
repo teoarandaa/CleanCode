@@ -78,6 +78,7 @@
 		935C5C282C94ADC600E08BAC /* CleanCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCodeUITests.swift; sourceTree = "<group>"; };
 		935C5C2A2C94ADC600E08BAC /* CleanCodeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCodeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9368B5062CB407400064B4FB /* FaqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqView.swift; sourceTree = "<group>"; };
+		9368B50E2CB56EA90064B4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		938914372CB08D1B00D2631E /* OthersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersView.swift; sourceTree = "<group>"; };
 		93A0BC082CADBE86003BAF5B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		93ACBDC82CAD70F6002DC57C /* DescriptionQ1Q2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionQ1Q2View.swift; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 		935C5C0C2C94ADC500E08BAC /* CleanCode */ = {
 			isa = PBXGroup;
 			children = (
+				9368B50E2CB56EA90064B4FB /* Info.plist */,
 				93ACBDC72CAD70C3002DC57C /* Descriptions */,
 				935C5C0D2C94ADC500E08BAC /* CleanCodeApp.swift */,
 				935C5C0F2C94ADC500E08BAC /* ContentView.swift */,
@@ -545,6 +547,7 @@
 				DEVELOPMENT_TEAM = H63C6QYHX2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CleanCode/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CleanCode;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -577,6 +580,7 @@
 				DEVELOPMENT_TEAM = H63C6QYHX2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CleanCode/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CleanCode;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

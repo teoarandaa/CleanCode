@@ -40,7 +40,7 @@ struct ContentView: View {
                 
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink(destination: SettingsView()) {
-                        Image(systemName: "gear.circle")
+                        Image(systemName: "gear")
                     }
                 }
             }

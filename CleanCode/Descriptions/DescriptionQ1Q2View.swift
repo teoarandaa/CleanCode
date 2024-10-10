@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DescriptionQ1Q2View: View {
+    @AppStorage("isDarkMode") private var isDarkMode = false
     @State private var showingBottomSheet: Bool = false
     let item: MenuItem
     
@@ -35,7 +36,7 @@ struct DescriptionQ1Q2View: View {
             }
         }
         .sheet(isPresented: $showingBottomSheet) {
-            BottomSheetView(item: MenuItem.example)
+            ImageSheetQ1Q2View(item: item)
                 .presentationDetents(.init([.height(560)]))
                 .presentationDragIndicator(.visible)
         }

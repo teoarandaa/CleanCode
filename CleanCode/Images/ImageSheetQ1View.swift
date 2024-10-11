@@ -12,7 +12,7 @@ struct ImageSheetQ1View: View {
     let item: MenuItem
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            Text("This is a very long text that will require horizontal scrolling to be fully visible.\nThis is a very long text that will require horizontal scrolling to be fully visible.\nThis is a very long text that will require horizontal scrolling to be fully visible.\nThis is a very long text that will require horizontal scrolling to be fully visible.\nThis is a very long text that will require horizontal scrolling to be fully visible.\nThis is a very long text that will require horizontal scrolling to be fully visible.")
+            Text("\(item.codeTest)")
                 .padding(5)
         }
         .frame(height: 700)

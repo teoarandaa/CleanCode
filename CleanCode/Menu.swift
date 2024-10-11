@@ -66,7 +66,8 @@ struct MenuItem: Codable, Hashable, Identifiable {
     var q30: String
     var q31: String
     var q32: String
-
+    var codeTest: String
+    
     var mainImage: String {
         name.replacingOccurrences(of: " ", with: "-").lowercased() // Aqui es donde se modifica el "name" del JSON para que coincida con el de la imagen (SEGUIR LA MISMA LÓGICA)
     }
@@ -76,6 +77,6 @@ struct MenuItem: Codable, Hashable, Identifiable {
     }
 
     #if DEBUG
-    static let example = MenuItem(id: UUID(), name: "C++", miniDescription: "High-performance, object-oriented language.", restrictions: ["E", "I"], ask1: "Hello world", ask2: "Hello world", ask3: "Hello world", ask4: "Hello world", ask5: "Hello world", ask6: "Hello world", ask7: "Hello world", ask8: "Hello world", ask9: "Hello world", ask10: "Hello world", ask11: "Hello world", ask12: "Hello world", ask13: "Hello world", ask14: "Hello world", ask15: "Hello world", ask16: "Hello world", q1: "good world", q2: "good world", q3: "good world", q4: "good world", q5: "good world", q6: "good world", q7: "good world", q8: "good world", q9: "good world", q10: "good world", q11: "good world", q12: "good world", q13: "good world", q14: "good world", q15: "good world", q16: "good world", q17: "good world", q18: "good world", q19: "good world", q20: "good world", q21: "good world", q22: "good world", q23: "good world", q24: "good world", q25: "good world", q26: "good world", q27: "good world", q28: "good world", q29: "good world", q30: "good world", q31: "good world", q32: "good world")
+    static let example = MenuItem(id: UUID(), name: "C++", miniDescription: "High-performance, object-oriented language.", restrictions: ["E", "I"], ask1: "Hello world", ask2: "Hello world", ask3: "Hello world", ask4: "Hello world", ask5: "Hello world", ask6: "Hello world", ask7: "Hello world", ask8: "Hello world", ask9: "Hello world", ask10: "Hello world", ask11: "Hello world", ask12: "Hello world", ask13: "Hello world", ask14: "Hello world", ask15: "Hello world", ask16: "Hello world", q1: "good world", q2: "good world", q3: "good world", q4: "good world", q5: "good world", q6: "good world", q7: "good world", q8: "good world", q9: "good world", q10: "good world", q11: "good world", q12: "good world", q13: "good world", q14: "good world", q15: "good world", q16: "good world", q17: "good world", q18: "good world", q19: "good world", q20: "good world", q21: "good world", q22: "good world", q23: "good world", q24: "good world", q25: "good world", q26: "good world", q27: "good world", q28: "good world", q29: "good world", q30: "good world", q31: "good world", q32: "good world", codeTest: "CodeTest")
     #endif
 }

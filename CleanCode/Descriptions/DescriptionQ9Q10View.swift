@@ -8,34 +8,41 @@
 import SwiftUI
 
 struct DescriptionQ9Q10View: View {
-    @State private var showingBottomSheet: Bool = false
+    @State private var showingBottomSheetA: Bool = false
+    @State private var showingBottomSheetB: Bool = false
     let item: MenuItem
     
     var body: some View {
         List {
             Section {
                 Button("See code") {
-                    showingBottomSheet.toggle()
+                    showingBottomSheetA.toggle()
                 }
+                Text(item.q1)
             }
             
             Section {
-                Text(item.q9)
-            }
-            Section {
-                Text(item.q10)
+                Button("See code") {
+                    showingBottomSheetB.toggle()
+                }
+                Text(item.q2)
             }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("\(item.ask5)")
+                Text("\(item.ask1)")
                     .font(.subheadline)
                     .bold()
                     .multilineTextAlignment(.trailing)
             }
         }
-        .sheet(isPresented: $showingBottomSheet) {
-            BottomSheetView(item: MenuItem.example)
+        .sheet(isPresented: $showingBottomSheetA) {
+            ImageSheetQ1View(item: item)
+                .presentationDetents(.init([.height(560)]))
+                .presentationDragIndicator(.visible)
+        }
+        .sheet(isPresented: $showingBottomSheetB) {
+            ImageSheetQ2View(item: item)
                 .presentationDetents(.init([.height(560)]))
                 .presentationDragIndicator(.visible)
         }

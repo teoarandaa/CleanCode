@@ -9,21 +9,23 @@ import SwiftUI
 
 struct DescriptionQ1Q2View: View {
     @AppStorage("isDarkMode") private var isDarkMode = false
-    @State private var showingBottomSheet: Bool = false
+    @State private var showingBottomSheetA: Bool = false
+    @State private var showingBottomSheetB: Bool = false
     let item: MenuItem
     
     var body: some View {
         List {
             Section {
                 Button("See code") {
-                    showingBottomSheet.toggle()
+                    showingBottomSheetA.toggle()
                 }
+                Text(item.q1)
             }
             
             Section {
-                Text(item.q1)
-            }
-            Section {
+                Button("See code") {
+                    showingBottomSheetB.toggle()
+                }
                 Text(item.q2)
             }
         }
@@ -35,8 +37,13 @@ struct DescriptionQ1Q2View: View {
                     .multilineTextAlignment(.trailing)
             }
         }
-        .sheet(isPresented: $showingBottomSheet) {
-            ImageSheetQ1Q2View(item: item)
+        .sheet(isPresented: $showingBottomSheetA) {
+            ImageSheetQ1View(item: item)
+                .presentationDetents(.init([.height(560)]))
+                .presentationDragIndicator(.visible)
+        }
+        .sheet(isPresented: $showingBottomSheetB) {
+            ImageSheetQ2View(item: item)
                 .presentationDetents(.init([.height(560)]))
                 .presentationDragIndicator(.visible)
         }

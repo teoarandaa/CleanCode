@@ -57,5 +57,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-// .searchable(text: $searchText)

@@ -27,6 +27,9 @@ struct SettingsView: View {
                 NavigationLink(destination: FaqView()) {
                     Text("FAQ (Frequently Asked Questions")
                 }
+                NavigationLink(destination: PrivacyView()) {
+                    Text("Privacy")
+                }
                 Button(action: {
                     sendEmail(to: "teoap2005@gmail.com")
                 }) {

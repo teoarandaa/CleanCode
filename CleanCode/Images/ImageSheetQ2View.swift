@@ -12,7 +12,7 @@ struct ImageSheetQ2View: View {
     let item: MenuItem
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            Text("\(item.codeTest)")
+            Text("\(item.code2)")
                 .padding(5)
         }
         .frame(height: 700)

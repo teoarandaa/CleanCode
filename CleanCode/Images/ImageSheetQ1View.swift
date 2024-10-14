@@ -18,6 +18,7 @@ struct ImageSheetQ1View: View {
         .frame(height: 700)
         .padding()
     }
+    
 }
 
 #Preview {

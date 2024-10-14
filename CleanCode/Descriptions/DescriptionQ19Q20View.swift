@@ -18,14 +18,14 @@ struct DescriptionQ19Q20View: View {
                 Button("See code") {
                     showingBottomSheetA.toggle()
                 }
-                Text(item.q1)
+                Text(item.q19)
             }
             
             Section {
                 Button("See code") {
                     showingBottomSheetB.toggle()
                 }
-                Text(item.q2)
+                Text(item.q20)
             }
         }
         .toolbar {

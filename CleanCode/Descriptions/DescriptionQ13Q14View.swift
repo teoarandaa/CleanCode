@@ -37,12 +37,12 @@ struct DescriptionQ13Q14View: View {
             }
         }
         .sheet(isPresented: $showingBottomSheetA) {
-            ImageSheetQ1View(item: item)
+            ImageSheetQ13View(item: item)
                 .presentationDetents(.init([.height(560)]))
                 .presentationDragIndicator(.visible)
         }
         .sheet(isPresented: $showingBottomSheetB) {
-            ImageSheetQ2View(item: item)
+            ImageSheetQ14View(item: item)
                 .presentationDetents(.init([.height(560)]))
                 .presentationDragIndicator(.visible)
         }

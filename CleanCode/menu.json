@@ -84,7 +84,7 @@
                 "code26": "### EMPTY ###",
                 "code27": "### EMPTY ###",
                 "code28": "### EMPTY ###",
-                "code29": "#include <iostream>\n\nclass Resource {\npublic:\n    Resource() {\n        // Acquire resource (e.g., memory)\n        data = new int[10];\n        std::cout << \"Resource acquired.\" << std::endl;\n    }\n\n    ~Resource() {\n        // Automatically release resource\n        delete[] data;\n        std::cout << \"Resource released.\" << std::endl;\n    }\n\nprivate:\n    int* data;\n};\n\nint main() {\n    {\n        Resource res; // The resource is acquired here\n    } // The resource is automatically released when going out of scope\n\n    return 0;\n}",
+                "code29": "#include <iostream>\n\nclass Resource {\npublic:\n    Resource() { std::cout << \"Resource acquired.\" << std::endl; }\n    ~Resource() { std::cout << \"Resource released.\" << std::endl; }\n};\n\nint main() {\n    {\n        Resource res; // Resource acquired\n    } // Resource automatically released when going out of scope\n\n    return 0;\n}",
                 "code30": "### EMPTY ###",
                 "code31": "#include <iostream>\n#include <memory>\n\nclass Resource {\npublic:\n    Resource() { std::cout << \"Resource acquired\" << std::endl; }\n    ~Resource() { std::cout << \"Resource released\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Resource> ptr = std::make_unique<Resource>();\n    // You don't need to manually release the resource; it will be released when ptr goes out of scope\n}",
                 "code32": "### EMPTY ###"

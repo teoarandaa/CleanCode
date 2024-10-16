@@ -62,7 +62,7 @@ struct ChapterView: View {
                 Text("\(item.ask16)")
             }
         }
-        .navigationTitle("Items")
+        .navigationTitle("Items for \(item.name)")
     }
 }
 

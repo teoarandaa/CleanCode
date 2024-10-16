@@ -694,7 +694,7 @@
               "code28": "### EMPTY ###",
               "code29": "WITH TotalSales AS (\n    SELECT customer_id, SUM(amount) AS total_sales\n    FROM sales\n    GROUP BY customer_id\n)\nSELECT c.name, v.total_sales\nFROM customers c\nJOIN TotalSales v ON c.id = v.customer_id\nORDER BY v.total_sales DESC;",
               "code30": "### EMPTY ###",
-              "code31": "-- Evitar esto:\nSELECT * FROM clientes;\n\n-- En su lugar, especifica las columnas necesarias:\nSELECT nombre, correo FROM clientes;",
+              "code31": "-- Avoid this:\nSELECT * FROM customers;\n\n-- Instead, specify the necessary columns:\nSELECT name, email FROM customers;",
               "code32": "### EMPTY ###"
 			},
             {

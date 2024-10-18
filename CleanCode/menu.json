@@ -197,7 +197,7 @@
                 "ask15": "Security",
                 "ask16": "Concurrency and parallelism management",
                 "q1": "Python has its own philosophy called the Zen of Python, which contains important guidelines for writing quality Python code. Some of the most notable principles are:\n\n- Readability counts\n- Explicit is better than implicit\n- Simple is better than complex\n- Exceptions should not pass silently (unless they are handled).\n\nYou can see these principles by typing 'import this' in the Python console.",
-                "q2": "### EMPTY ###",
+                "q2": "Helpful comments: Comment only where necessary to explain why something is done, not what the code does.",
                 "q3": "Use descriptive names:\nAssign clear and meaningful names to variables, functions, classes, and modules. Avoid cryptic abbreviations.",
                 "q4": "Useful comments:\nComment only where necessary to explain the why of something, not the what the code does.",
                 "q5": "Indentation:\nUse 4 spaces per indentation level. Do not use tabs.",
@@ -228,8 +228,8 @@
                 "q30": "Escape user inputs:\nAlways validate and escape user inputs, especially in web applications, to prevent attacks such as code injection.",
                 "q31": "Use asyncio and concurrent.futures when necessary:\nTo improve performance in programs that require intensive input/output operations or when you need to handle multiple tasks at once, use asyncio for asynchronous programming or concurrent.futures for parallelism.",
                 "q32": "Avoid blocking the main thread:\nProper use of these mechanisms allows your code to be more efficient without blocking the main flow of the program, improving performance in applications with many concurrent requests, such as web servers.",
-                "code1": "### EMPTY ###",
-                "code2": "### EMPTY ###",
+                "code1": "def calculate_rectangle_area(base, height):\n    \"\"\"Calculates the area of a rectangle.\"\"\"\n    return base * height\n\n# Using the function with explicit names\nbase = 5\nheight = 3\narea = calculate_rectangle_area(base, height)\n\nprint(f\"The area of the rectangle is: {area}\")  # Output: The area of the rectangle is: 15",
+                "code2": "def divide(a, b):\n    \"\"\"Divides two numbers and handles the exception if b is zero.\"\"\"\n    if b == 0:\n        raise ValueError(\"Error: Cannot divide by zero.\")\n    return a / b\n\n# Using the function\ntry:\n    result = divide(10, 0)  # Attempting to divide by zero\nexcept ValueError as e:\n    print(e)  # Output: Error: Cannot divide by zero.\nelse:\n    print(f\"Result: {result}\")",
                 "code3": "# Descriptive name\ndef calculate_rectangle_area(width, height):\n    return width * height",
                 "code4": "def calculate_rectangle_area(width, height):\n    \"\"\"\n    Calculates the area of a rectangle.\n    \n    :param width: Width of the rectangle.\n    :param height: Height of the rectangle.\n    :return: Area of the rectangle.\n    \"\"\"\n    return width * height",
                 "code5": "def my_function():\n    x = 10\n    y = 20\n    return x + y",
@@ -259,7 +259,7 @@
                 "code29": "# Don't use eval() if possible\n# eval(\"print('Hello')\")",
                 "code30": "import html\n\ndef escape_html(text):\n    return html.escape(text)",
                 "code31": "import asyncio\n\nasync def slow_task():\n    await asyncio.sleep(2)\n    return \"Task completed\"\n\nasync def main():\n    print(\"Iniciating task...\")\n    result = await slow_task()\n    print(result)\n\nasyncio.run(main())",
-                "code32": "### EMPTY ###"
+                "code32": "import asyncio\n\nasync def task():\n    await asyncio.sleep(1)\n    print(\"Task completed\")\n\nasync def main():\n    await asyncio.gather(task(), task())\n\n# Run the main function\nasyncio.run(main())"
 			},
 			{
                 "id": "8903A204-F5C1-4D5C-A0A1-5C0ECD27FDD7",
@@ -811,7 +811,7 @@
                 "ask15": "Security",
                 "ask16": "Concurrency and parallelism management",
                 "q1": "Python has its own philosophy called the Zen of Python, which contains important guidelines for writing quality Python code. Some of the most notable principles are: readability counts, explicit is better than implicit, simple is better than complex, and exceptions should not pass silently (unless they are handled). You can see these principles by typing 'import this' in the Python console.",
-                "q2": "### EMPTY ###",
+                "q2": "Helpful comments: Comment only where necessary to explain why something is done, not what the code does.",
                 "q3": "Use descriptive names:\nAssign clear and meaningful names to variables, functions, classes, and modules. Avoid cryptic abbreviations.",
                 "q4": "Useful comments:\nComment only where necessary to explain the why of something, not the what the code does.",
                 "q5": "Indentation:\nUse 4 spaces per indentation level. Do not use tabs.",
@@ -842,8 +842,8 @@
                 "q30": "Escape user inputs:\nAlways validate and escape user inputs, especially in web applications, to prevent attacks such as code injection.",
                 "q31": "Use asyncio and concurrent.futures when necessary:\nTo improve performance in programs that require intensive input/output operations or when you need to handle multiple tasks at once, use asyncio for asynchronous programming or concurrent.futures for parallelism.",
                 "q32": "Avoid blocking the main thread:\nProper use of these mechanisms allows your code to be more efficient without blocking the main flow of the program, improving performance in applications with many concurrent requests, such as web servers.",
-                "code1": "### EMPTY ###",
-                "code2": "### EMPTY ###",
+                "code1": "def calculate_rectangle_area(base, height):\n    \"\"\"Calculates the area of a rectangle.\"\"\"\n    return base * height\n\n# Using the function with explicit names\nbase = 5\nheight = 3\narea = calculate_rectangle_area(base, height)\n\nprint(f\"The area of the rectangle is: {area}\")  # Output: The area of the rectangle is: 15",
+                "code2": "def divide(a, b):\n    \"\"\"Divides two numbers and handles the exception if b is zero.\"\"\"\n    if b == 0:\n        raise ValueError(\"Error: Cannot divide by zero.\")\n    return a / b\n\n# Using the function\ntry:\n    result = divide(10, 0)  # Attempting to divide by zero\nexcept ValueError as e:\n    print(e)  # Output: Error: Cannot divide by zero.\nelse:\n    print(f\"Result: {result}\")",
                 "code3": "# Descriptive name\ndef calculate_rectangle_area(width, height):\n    return width * height",
                 "code4": "def calculate_rectangle_area(width, height):\n    \"\"\"\n    Calculates the area of a rectangle.\n    \n    :param width: Width of the rectangle.\n    :param height: Height of the rectangle.\n    :return: Area of the rectangle.\n    \"\"\"\n    return width * height",
                 "code5": "def my_function():\n    x = 10\n    y = 20\n    return x + y",
@@ -873,7 +873,7 @@
                 "code29": "# Don't use eval() if possible\n# eval(\"print('Hello')\")",
                 "code30": "import html\n\ndef escape_html(text):\n    return html.escape(text)",
                 "code31": "import asyncio\n\nasync def slow_task():\n    await asyncio.sleep(2)\n    return \"Task completed\"\n\nasync def main():\n    print(\"Iniciating task...\")\n    result = await slow_task()\n    print(result)\n\nasyncio.run(main())",
-                "code32": "### EMPTY ###"
+                "code32": "import asyncio\n\nasync def task():\n    await asyncio.sleep(1)\n    print(\"Task completed\")\n\nasync def main():\n    await asyncio.gather(task(), task())\n\n# Run the main function\nasyncio.run(main())"
             },
             {
                 "id": "8903A204-F5C1-4D5C-A0A1-5C0ECD27FDD7",

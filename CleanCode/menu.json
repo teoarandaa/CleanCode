@@ -56,7 +56,7 @@
                 "q30": "Avoid resource leaks:\nRAII allows destructors to handle resource release, eliminating the need to manually manage it and reducing memory leaks or improperly released resources.",
                 "q31": "Smart pointers for automatic memory management:\nUse std::unique_ptr when only one object should own a resource, and std::shared_ptr when multiple objects need to share ownership of a resource. This improves memory management and prevents leaks.",
                 "q32": "Error prevention with raw pointers:\nSmart pointers (std::unique_ptr and std::shared_ptr) eliminate the need to manually release memory, reducing the risk of leaks and other errors associated with raw pointers.",
-                "code1": "### EMPTY ###",
+                "code1": "class MyClass {\npublic:\n    int myVariable;\n\n    void myMethod() {\n        // Method logic\n        myVariable += 10;\n    }\n};\n\n// Usage\nMyClass example;\nexample.myVariable = 5;\nexample.myMethod();",
                 "code2": "### EMPTY ###",
                 "code3": "std::unique_ptr<MyClass> obj = std::make_unique<MyClass>();",
                 "code4": "std::ifstream file(\"file.txt\");  // The file is automatically closed when exiting the scope",

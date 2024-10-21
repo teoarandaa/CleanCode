@@ -30,7 +30,7 @@ struct DescriptionQ29Q30View: View {
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("\(item.ask1)")
+                Text("\(item.ask15)")
                     .font(.subheadline)
                     .bold()
                     .multilineTextAlignment(.trailing)

@@ -59,7 +59,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    WelcomeView(isWelcomeSheetShowing: .constant(false))
+    ContentView()
 }
 
     struct PageInfo: Identifiable {

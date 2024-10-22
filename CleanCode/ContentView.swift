@@ -62,22 +62,22 @@ struct ContentView: View {
     WelcomeView(isWelcomeSheetShowing: .constant(false))
 }
 
-struct PageInfo: Identifiable {
-    let id = UUID()
-    let label: String
-    let text: String
-    let image: ImageResource
-}
+    struct PageInfo: Identifiable {
+        let id = UUID()
+        let label: String
+        let text: String
+        let image: ImageResource
+    }
 
-let pages = [
-    PageInfo(label: "welcome to cleancode", text: "discover the finest pastries", image: .imageOne),
-    PageInfo(label: "omg to cleancode", text: "hell yeah", image: .imageOne),
-    PageInfo(label: "last to cleancode", text: "bye bye", image: .imageOne)
-]
+    let pages = [
+        PageInfo(label: "Welcome to CleanCode", text: "We’re excited to have you! CleanCode helps you optimize your coding experience, making your projects cleaner and easier to maintain.", image: .imageOne),
+        PageInfo(label: "Benefits", text: "CleanCode provides offline programming knowledge, allowing you to explore languages and get instant coding tips anytime, anywhere.", image: .imageTwo),
+        PageInfo(label: "Are you ready?", text: "Let’s transform the way you code.\nYour journey starts now—let’s get started!", image: .imageThree)
+    ]
 
 struct WelcomeView: View {
     @Binding var isWelcomeSheetShowing: Bool
-    @State private var currentPage = 0 // Para rastrear la página actual
+    @State private var currentPage = 0
     
     var body: some View {
         VStack {
@@ -88,22 +88,26 @@ struct WelcomeView: View {
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
+                            .frame(height: 100)
+                        
+                        Spacer()
+                            .frame(height: 20)
                         
                         Text(pages[index].text)
                             .fontWeight(.medium)
                             .padding()
+                            .frame(height: 100)
+                            .multilineTextAlignment(.leading)
                         
                         Image(pages[index].image)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .padding()
                     }
-                    .tag(index) // Etiqueta para la selección de TabView
+                    .tag(index)
                 }
             }
             .tabViewStyle(.page)
             
-            // Botón con animación de aparición/desaparición basado en la página actual
             Button {
                 isWelcomeSheetShowing.toggle()
             } label: {
@@ -114,9 +118,10 @@ struct WelcomeView: View {
                     .padding(.vertical, 8)
             }
             .buttonStyle(.borderedProminent)
+            .tint(Color.mint)
             .padding()
-            .opacity(currentPage == pages.count - 1 ? 1 : 0) // El botón aparece solo en la última página
-            .animation(.easeInOut(duration: 0.5), value: currentPage) // Animación al cambiar de página
+            .opacity(currentPage == pages.count - 1 ? 1 : 0)
+            .animation(.easeInOut(duration: 0.5), value: currentPage)
         }
         .interactiveDismissDisabled()
         .onAppear {

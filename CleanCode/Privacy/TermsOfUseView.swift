@@ -58,7 +58,7 @@ struct TermsOfUseView: View {
                         
                     Text("9. Contact Information\n")
                     
-                    Text("For questions or concerns about these Terms of Use, please contact us at support@cleancodeapp.com.")
+                    Text("For questions or concerns about these Terms of Use, please contact us at help.cleancode@gmail.com.")
                 }
             }
             .padding()

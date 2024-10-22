@@ -31,7 +31,7 @@ struct SettingsView: View {
                     Text("Privacy")
                 }
                 Button(action: {
-                    sendEmail(to: "teoap2005@gmail.com")
+                    sendEmail(to: "help.cleancode@gmail.com")
                 }) {
                     Text("CleanCode Support")
                 }

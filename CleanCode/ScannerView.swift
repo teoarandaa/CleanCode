@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct ScannerView: View {
+    //MARK: Interconnect ScanProvider from ScanView() with ScannerView() to use it
     @StateObject var scanProvider = ScanProvider()
     
     var body: some View {
+        //MARK: UI for the scanner function
         ScanView(scanProvider: scanProvider)
+            //MARK: Sheet where content appears
             .sheet(isPresented: $scanProvider.showSheet) {
                 VStack {
                     Text(scanProvider.text)

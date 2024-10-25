@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//MARK: Constants to save information
 struct FAQItem: Identifiable {
     let id = UUID()
     let question: String
@@ -15,6 +16,7 @@ struct FAQItem: Identifiable {
 
 struct FAQView: View {
     @State private var expandedItem: UUID?
+    //MARK: FAQs content
     let faqItems: [FAQItem] = [
         FAQItem(question: "What is CleanCode", answer: "CleanCode is the tool for the developers to optimize their code and make it more readable and maintainable."),
         FAQItem(question: "Is CleanCode free to use?", answer: "The essentials of CleanCode are free to use. Who knows, you might find some extra features for free too!"),
@@ -28,6 +30,7 @@ struct FAQView: View {
         FAQItem(question: "How can I contact support?", answer: "You can contact support by sending an email to support@example.com.")
     ]
     
+    //MARK: Expanding buttons to show answers when tapped
     var body: some View {
         List(faqItems) { item in
             DisclosureGroup(

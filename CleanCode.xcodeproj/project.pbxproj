@@ -230,6 +230,8 @@
 				938914372CB08D1B00D2631E /* OthersView.swift */,
 				9368B5062CB407400064B4FB /* FaqView.swift */,
 				9368B5582CB9E3560064B4FB /* PrivacyView.swift */,
+				93A4B46E2CCBC3A800A8B40C /* ScannerView.swift */,
+				93A4B46C2CCBBD7400A8B40C /* ScanView.swift */,
 				935940CA2CA2FB5D002AA0C9 /* ItemRow.swift */,
 				935940C42CA201DA002AA0C9 /* Menu.swift */,
 				935940C22CA2017E002AA0C9 /* Helper.swift */,
@@ -238,8 +240,6 @@
 				93A4B4602CC7F3D700A8B40C /* Credits */,
 				935C5C1D2C94ADC600E08BAC /* CleanCodeTests */,
 				935C5C132C94ADC600E08BAC /* Preview Content */,
-				93A4B46C2CCBBD7400A8B40C /* ScanView.swift */,
-				93A4B46E2CCBC3A800A8B40C /* ScannerView.swift */,
 			);
 			path = CleanCode;
 			sourceTree = "<group>";

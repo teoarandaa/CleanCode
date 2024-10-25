@@ -19,6 +19,9 @@ struct ContentView: View {
                 Button("More information") {
                     showingBottomSheet.toggle()
                 }
+                NavigationLink(destination: ScannerView()) {
+                    Text("Code analyst")
+                }
                 ForEach(language) { section in
                     Section(section.name) {
                         ForEach(section.items) { item in

@@ -20,6 +20,7 @@ struct ScannerView: View {
                         .padding(.horizontal, 20)
                     Spacer()
                 }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .presentationDragIndicator(.visible)
                 .presentationDetents([.medium, .large])
             }

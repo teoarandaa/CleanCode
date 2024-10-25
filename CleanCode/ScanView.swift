@@ -13,7 +13,7 @@ struct ScanView: UIViewControllerRepresentable {
     
     func makeUIViewController(context: Context) -> DataScannerViewController {
         let dataScannerViewController = DataScannerViewController(recognizedDataTypes: [.text()],
-                                                                  qualityLevel: .accurate,
+                                                                  qualityLevel: .fast,
                                                                   isHighlightingEnabled: true)
         dataScannerViewController.delegate = scanProvider
         try? dataScannerViewController.startScanning()

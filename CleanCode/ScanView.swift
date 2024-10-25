@@ -29,11 +29,13 @@ struct ScanView: UIViewControllerRepresentable {
 final class ScanProvider: NSObject, DataScannerViewControllerDelegate, ObservableObject {
     @Published var text: String = ""
     @Published var error: DataScannerViewController.ScanningUnavailable?
+    @Published var showSheet: Bool = false
     
     func dataScanner(_ dataScanner: DataScannerViewController, didTapOn item: RecognizedItem) {
         switch item {
         case .text(let recognizedText):
             self.text = recognizedText.transcript
+            self.showSheet.toggle()
         case .barcode(_):
             break
         @unknown default:

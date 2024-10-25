@@ -21,6 +21,8 @@ struct ContentView: View {
                 }
                 NavigationLink(destination: ScannerView()) {
                     Text("Code analyst")
+                        .foregroundStyle(.link)
+                    
                 }
                 ForEach(language) { section in
                     Section(section.name) {

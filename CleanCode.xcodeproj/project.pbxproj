@@ -218,8 +218,9 @@
 		935C5C0C2C94ADC500E08BAC /* CleanCode */ = {
 			isa = PBXGroup;
 			children = (
-				93A4B4D22CCEC10A00A8B40C /* Scanner */,
+				93A4B4DA2CCEC86600A8B40C /* ChatGPT-API */,
 				9368B50E2CB56EA90064B4FB /* Info.plist */,
+				93A4B4D22CCEC10A00A8B40C /* Scanner */,
 				9368B55A2CB9E4910064B4FB /* Privacy */,
 				9368B5112CB8095B0064B4FB /* Images */,
 				93ACBDC72CAD70C3002DC57C /* Descriptions */,
@@ -322,6 +323,13 @@
 				93A4B4D52CCEC35100A8B40C /* ScanView.swift */,
 			);
 			path = Scanner;
+			sourceTree = "<group>";
+		};
+		93A4B4DA2CCEC86600A8B40C /* ChatGPT-API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "ChatGPT-API";
 			sourceTree = "<group>";
 		};
 		93ACBDC72CAD70C3002DC57C /* Descriptions */ = {
@@ -443,6 +451,9 @@
 				"pt-PT",
 			);
 			mainGroup = 935C5C012C94ADC500E08BAC;
+			packageReferences = (
+				93A4B4D72CCEC80200A8B40C /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 935C5C0B2C94ADC500E08BAC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -888,6 +899,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93A4B4D72CCEC80200A8B40C /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 935C5C022C94ADC500E08BAC /* Project object */;
 }

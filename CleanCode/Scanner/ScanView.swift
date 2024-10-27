@@ -11,7 +11,7 @@ import VisionKit
 struct ScanView: UIViewControllerRepresentable {
     @ObservedObject var scanProvider: ScanProvider
     
-    //MARK: Configuration for scanner controller
+    // MARK: - Configuration for scanner controller
     func makeUIViewController(context: Context) -> DataScannerViewController {
         let dataScannerViewController = DataScannerViewController(recognizedDataTypes: [.text()],
                                                                   qualityLevel: .fast,
@@ -26,13 +26,13 @@ struct ScanView: UIViewControllerRepresentable {
     }
 }
 
-//MARK: Saves the text scanned and shows an error when is unable to scan the text
+// MARK: - Saves the text scanned and shows an error when is unable to scan the text
 final class ScanProvider: NSObject, DataScannerViewControllerDelegate, ObservableObject {
     @Published var text: String = ""
     @Published var error: DataScannerViewController.ScanningUnavailable?
     @Published var showSheet: Bool = false
     
-    //MARK: Transcripts the text. Ignores the barcodes and others
+    // MARK: - Transcripts the text. Ignores the barcodes and others
     func dataScanner(_ dataScanner: DataScannerViewController, didTapOn item: RecognizedItem) {
         switch item {
         case .text(let recognizedText):
@@ -45,7 +45,7 @@ final class ScanProvider: NSObject, DataScannerViewControllerDelegate, Observabl
         }
     }
     
-    //MARK: Catches the error to show it in the screen
+    // MARK: - Catches the error to show it in the screen
     func dataScanner(_ dataScanner: DataScannerViewController,
                      becameUnavailableWithError error: DataScannerViewController.ScanningUnavailable) {
         self.error = error

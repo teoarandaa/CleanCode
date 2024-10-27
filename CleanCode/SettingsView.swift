@@ -10,22 +10,22 @@ import SwiftUI
 struct SettingsView: View {
     @AppStorage("isDarkMode") private var isDarkMode = false
     
-    //MARK: Sections for every setting
+    // MARK: - Sections for every setting
     var body: some View {
         List {
-            //MARK: Notifications
+            // MARK: - Notifications
             Section("Notifications") {
                 Toggle (isOn: $isDarkMode){
                     Text("Push notifications")
                 }
             }
-            //MARK: Appearance
+            // MARK: - Appearance
             Section("Appearance") {
                 Toggle(isOn: $isDarkMode) {
                     Text("Dark mode")
                 }
             }
-            //MARK: Others
+            // MARK: - Others
             Section("Others") {
                 NavigationLink(destination: FaqView()) {
                     Text("FAQ (Frequently Asked Questions")

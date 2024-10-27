@@ -10,6 +10,7 @@ import SwiftUI
 struct ScannerView: View {
     @StateObject var scanProvider = ScanProvider()
     
+    // MARK: - Shows the text captured through the camera
     var body: some View {
         ScanView(scanProvider: scanProvider)
             .sheet(isPresented: $scanProvider.showSheet) {

@@ -13,7 +13,7 @@ struct ItemRow: View {
     @AppStorage("isDarkMode") private var isDarkMode = false
     
     var body: some View {
-        //MARK: Display text and mini description of every language
+        // MARK: - Display text and mini description of every language
         HStack {
             VStack (alignment: .leading){
                 Text(item.name)
@@ -23,7 +23,7 @@ struct ItemRow: View {
             
             Spacer()
             
-            //MARK: Display the restrictions and the colors previosuly filtered in colors
+            // MARK: - Display the restrictions and the colors previosuly filtered in colors
             ForEach(item.restrictions, id: \.self) { restriction in
                 ZStack {
                     RoundedRectangle(cornerRadius: 100)

@@ -11,7 +11,7 @@ struct ChapterView: View {
     let item: MenuItem
     @AppStorage("isDarkMode") private var isDarkMode = false
     
-    //MARK: List of every section of 1 language. It addapts the information displayed to the language the user is using -> Descriptions/DescriptionQXQYView()
+    // MARK: - List of every section of 1 language. It addapts the information displayed to the language the user is using -> Descriptions/DescriptionQXQYView()
     var body: some View {
         List {
             NavigationLink(destination: DescriptionQ1Q2View(item: item)) {

@@ -11,11 +11,11 @@ struct BottomSheetView: View {
     let item: MenuItem
     @AppStorage("isDarkMode") private var isDarkMode = false
     
-    //MARK: Structure for displaying the items. All three separated by HStack{}
+    // MARK: - Structure for displaying the items. All three separated by HStack{}
     var body: some View {
         VStack(alignment: .leading) {
             
-            //MARK: Easy
+            // MARK: - Easy
             HStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: 100)
@@ -34,7 +34,7 @@ struct BottomSheetView: View {
                 .padding()
             }
             
-            //MARK: Intermediate
+            // MARK: - Intermediate
             HStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: 100)
@@ -53,7 +53,7 @@ struct BottomSheetView: View {
                 .padding()
             }
             
-            //MARK: Hard
+            // MARK: - Hard
             HStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: 100)

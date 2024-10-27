@@ -10,10 +10,10 @@ import SwiftUI
 struct OthersView: View {
     @AppStorage("isDarkMode") private var isDarkMode = false
     
-    //MARK: Sections for every field
+    // MARK: - Sections for every field
     var body: some View {
         List {
-            //MARK: Social media
+            // MARK: - Social media
             Section("Social media") {
                 Button("CleanCode website") {
                     UIApplication.shared.open(URL(string: "https://www.example.com")!)
@@ -27,16 +27,16 @@ struct OthersView: View {
                     Text("Share CleanCode")
                 }
             }
-            //MARK: Tip jar
+            // MARK: - Tip jar
             Section("Tip jar") {
                 Text("Nothing here... for now")
                     .foregroundStyle(.gray)
             }
-            //MARK: Agreements
+            // MARK: - Agreements
             Section("Agreements") {
                 Text("Thanks to all my friends and my girlfriend for being my support!")
             }
-            //MARK: Version (update from CleanCode/General/Version)
+            // MARK: - Version (update from CleanCode/General/Version)
             Section("Version") {
                 Text(appVersion!)
             }

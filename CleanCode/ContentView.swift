@@ -24,8 +24,7 @@ struct ContentView: View {
                 // MARK: - Scanner -> ScannerView()
                 NavigationLink(destination: ScannerView()) {
                     Text("Code analyst")
-                        .foregroundStyle(.link)
-                    
+                        .foregroundStyle(.accent)
                 }
                 
                 // MARK: - Print all the languages -> ChapterView()
@@ -95,7 +94,7 @@ struct PageInfo: Identifiable {
 let pages = [
     PageInfo(label: "Welcome to CleanCode", text: "We’re excited to have you! CleanCode helps you optimize your coding experience, making your projects cleaner and easier to maintain.", image: .imageOne),
     PageInfo(label: "Benefits", text: "CleanCode provides offline programming knowledge, allowing you to explore languages and get instant coding tips anytime, anywhere.", image: .imageTwo),
-    PageInfo(label: "Are you ready?", text: "Let’s transform the way you code.\nYour journey starts now—let’s get started!", image: .imageThree)
+    PageInfo(label: "Are you ready?", text: "Join us in revolutionizing the way you approach coding. Your exciting journey begins here, right now. Are you ready to take the first step? Let’s get started!", image: .imageThree)
 ]
 
 // MARK: - Structure of the view for every page (UI)
@@ -130,6 +129,7 @@ struct WelcomeView: View {
                     .tag(index)
                 }
             }
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             .tabViewStyle(.page)
             
             // MARK: - Last button. It appears when the user is in the last page
@@ -143,16 +143,11 @@ struct WelcomeView: View {
                     .padding(.vertical, 8)
             }
             .buttonStyle(.borderedProminent)
-            .tint(Color.mint)
+            .tint(Color.accentColor)
             .padding()
             .opacity(currentPage == pages.count - 1 ? 1 : 0)
             .animation(.easeInOut(duration: 0.5), value: currentPage)
         }
         .interactiveDismissDisabled()
-        .onAppear {
-            // MARK: - Color for the page indicator
-            UIPageControl.appearance().currentPageIndicatorTintColor = .label
-            UIPageControl.appearance().pageIndicatorTintColor = .systemGray
-        }
     }
 }

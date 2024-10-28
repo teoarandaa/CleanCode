@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ScannerView: View {
     @StateObject var scanProvider = ScanProvider()
+    @AppStorage("isDarkMode") private var isDarkMode = false
     @AppStorage("isScannerWelcomeSheetShowing") var isScannerWelcomeSheetShowing: Bool = true
     
     // MARK: - Shows the text captured through the camera
@@ -100,10 +101,5 @@ struct ScannerWelcomeView: View {
             .animation(.easeInOut(duration: 0.5), value: currentPage)
         }
         .interactiveDismissDisabled()
-        .onAppear {
-            // MARK: - Color for the page indicator
-            UIPageControl.appearance().currentPageIndicatorTintColor = .label
-            UIPageControl.appearance().pageIndicatorTintColor = .systemGray
-        }
     }
 }

@@ -50,6 +50,8 @@ struct FAQView: View {
 }
 
 struct FaqView: View {
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some View {
         FAQView()
     }

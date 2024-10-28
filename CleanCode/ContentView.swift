@@ -11,7 +11,7 @@ struct ContentView: View {
     let language = Bundle.main.decode([DataSection].self, from: "data.json")
     @State private var showingBottomSheet: Bool = false
     @AppStorage("isDarkMode") private var isDarkMode = false
-    @AppStorage("iswelcomeSheetShowing") var isWelcomeSheetShowing: Bool = true
+    @AppStorage("isWelcomeSheetShowing") var isWelcomeSheetShowing: Bool = true
     
     var body: some View {
         NavigationStack {

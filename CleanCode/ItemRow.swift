@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ItemRow: View {
-    let item: MenuItem
+    let item: DataItem
     let colors: [String: Color] = ["E": .green, "I": .yellow, "D": .red]
     @AppStorage("isDarkMode") private var isDarkMode = false
     
@@ -42,5 +42,5 @@ struct ItemRow: View {
 }
 
 #Preview {
-    ItemRow(item: MenuItem.example)
+    ItemRow(item: DataItem.example)
 }

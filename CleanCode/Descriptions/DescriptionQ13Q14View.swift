@@ -10,7 +10,7 @@ import SwiftUI
 struct DescriptionQ13Q14View: View {
     @State private var showingBottomSheetA: Bool = false
     @State private var showingBottomSheetB: Bool = false
-    let item: MenuItem
+    let item: DataItem
     
     var body: some View {
         List {
@@ -50,5 +50,5 @@ struct DescriptionQ13Q14View: View {
 }
 
 #Preview {
-    DescriptionQ13Q14View(item: MenuItem.example)
+    DescriptionQ13Q14View(item: DataItem.example)
 }

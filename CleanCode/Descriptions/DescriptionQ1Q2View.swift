@@ -11,7 +11,7 @@ struct DescriptionQ1Q2View: View {
     @AppStorage("isDarkMode") private var isDarkMode = false
     @State private var showingBottomSheetA: Bool = false
     @State private var showingBottomSheetB: Bool = false
-    let item: MenuItem
+    let item: DataItem
     
     var body: some View {
         List {
@@ -51,5 +51,5 @@ struct DescriptionQ1Q2View: View {
 }
 
 #Preview {
-    DescriptionQ1Q2View(item: MenuItem.example)
+    DescriptionQ1Q2View(item: DataItem.example)
 }

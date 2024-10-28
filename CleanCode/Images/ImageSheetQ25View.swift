@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ImageSheetQ25View: View {
     @AppStorage("isDarkMode") private var isDarkMode = false
-    let item: MenuItem
+    let item: DataItem
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             Text(item.code25)
@@ -21,5 +21,5 @@ struct ImageSheetQ25View: View {
 }
 
 #Preview {
-    ImageSheetQ25View(item: MenuItem.example)
+    ImageSheetQ25View(item: DataItem.example)
 }

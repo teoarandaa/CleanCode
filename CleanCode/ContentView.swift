@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    let language = Bundle.main.decode([MenuSection].self, from: "menu.json")
+    let language = Bundle.main.decode([DataSection].self, from: "data.json")
     @State private var showingBottomSheet: Bool = false
     @AppStorage("isDarkMode") private var isDarkMode = false
     @AppStorage("iswelcomeSheetShowing") var isWelcomeSheetShowing: Bool = true
@@ -41,7 +41,7 @@ struct ContentView: View {
             }
             
             // MARK: - Destination for every NavigationLink in Foreach -> ChapterView()
-            .navigationDestination(for: MenuItem.self) { item in
+            .navigationDestination(for: DataItem.self) { item in
                 ChapterView(item: item)
             }
             
@@ -66,7 +66,7 @@ struct ContentView: View {
         
         // MARK: - Sheet for explainings about the difficulties in every language -> BottomSheetView()
         .sheet(isPresented: $showingBottomSheet) {
-            BottomSheetView(item: MenuItem.example)
+            BottomSheetView()
                 .presentationDetents(.init([.height(700)]))
                 .presentationDragIndicator(.visible)
         }

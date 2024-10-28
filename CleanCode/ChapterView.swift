@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ChapterView: View {
-    let item: MenuItem
+    let item: DataItem
     @AppStorage("isDarkMode") private var isDarkMode = false
     
     // MARK: - List of every section of 1 language. It addapts the information displayed to the language the user is using -> Descriptions/DescriptionQXQYView()
@@ -68,5 +68,5 @@ struct ChapterView: View {
 }
 
 #Preview {
-    ChapterView(item: MenuItem.example)
+    ChapterView(item: DataItem.example)
 }

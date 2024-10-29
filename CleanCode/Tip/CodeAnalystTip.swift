@@ -9,6 +9,9 @@ import Foundation
 import TipKit
 
 struct CodeAnalystTip: Tip {
+    
+    @Parameter
+    static var isMoreInformationTipFinished: Bool = false
     var title: Text {
         Text("Scan code")
             .foregroundStyle(.accent)
@@ -20,5 +23,12 @@ struct CodeAnalystTip: Tip {
     
     var image: Image? {
         Image(systemName: "magnifyingglass")
+    }
+    var rules: [Rule] {
+        [
+            #Rule(Self.$isMoreInformationTipFinished) {
+                $0 == true
+            }
+        ]
     }
 }

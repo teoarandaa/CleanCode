@@ -349,11 +349,11 @@
 			isa = PBXGroup;
 			children = (
 				93A4B4DE2CD0379C00A8B40C /* MoreInformationTip.swift */,
+				9363C2B92CD174630023CB61 /* CodeAnalystTip.swift */,
 				9363C2AF2CD173AD0023CB61 /* LanguageTip.swift */,
 				9363C2B32CD173EA0023CB61 /* LanguageItemsTip.swift */,
 				9363C2B52CD1742C0023CB61 /* SettingsTip.swift */,
 				9363C2B72CD1744A0023CB61 /* OthersTip.swift */,
-				9363C2B92CD174630023CB61 /* CodeAnalystTip.swift */,
 			);
 			path = Tip;
 			sourceTree = "<group>";

@@ -35,12 +35,11 @@ struct ContentView: View {
                     Text("Code analyst")
                         .foregroundStyle(.accent)
                 }
-                .popoverTip(codeAnalystTip)
                 
                 // MARK: - Language Tip
-                Section {
+                /*Section {
                     TipView(languageTip)
-                }
+                }*/
                 // MARK: - Print all the languages -> ChapterView()
                 ForEach(language) { section in
                     Section(section.name) {

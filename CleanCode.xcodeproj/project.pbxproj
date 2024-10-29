@@ -60,6 +60,7 @@
 		93A4B4612CC7F3D700A8B40C /* Credits in Resources */ = {isa = PBXBuildFile; fileRef = 93A4B4602CC7F3D700A8B40C /* Credits */; };
 		93A4B4D42CCEC18D00A8B40C /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B4D32CCEC18D00A8B40C /* ScannerView.swift */; };
 		93A4B4D62CCEC35100A8B40C /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B4D52CCEC35100A8B40C /* ScanView.swift */; };
+		93A4B4DF2CD0379C00A8B40C /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B4DE2CD0379C00A8B40C /* Tip.swift */; };
 		93ACBDC92CAD70F6002DC57C /* DescriptionQ1Q2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACBDC82CAD70F6002DC57C /* DescriptionQ1Q2View.swift */; };
 		93ACBDE92CAD7194002DC57C /* DescriptionQ3Q4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACBDE82CAD7194002DC57C /* DescriptionQ3Q4View.swift */; };
 		93ACBDEB2CAD71A4002DC57C /* DescriptionQ5Q6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACBDEA2CAD71A4002DC57C /* DescriptionQ5Q6View.swift */; };
@@ -153,6 +154,7 @@
 		93A4B4602CC7F3D700A8B40C /* Credits */ = {isa = PBXFileReference; lastKnownFileType = text; path = Credits; sourceTree = "<group>"; };
 		93A4B4D32CCEC18D00A8B40C /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		93A4B4D52CCEC35100A8B40C /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		93A4B4DE2CD0379C00A8B40C /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		93ACBDC82CAD70F6002DC57C /* DescriptionQ1Q2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionQ1Q2View.swift; sourceTree = "<group>"; };
 		93ACBDE82CAD7194002DC57C /* DescriptionQ3Q4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionQ3Q4View.swift; sourceTree = "<group>"; };
 		93ACBDEA2CAD71A4002DC57C /* DescriptionQ5Q6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionQ5Q6View.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 			children = (
 				9368B50E2CB56EA90064B4FB /* Info.plist */,
 				93A4B4DA2CCEC86600A8B40C /* ChatGPT-API */,
+				93A4B4DD2CD0375000A8B40C /* Tip */,
 				93A4B4D22CCEC10A00A8B40C /* Scanner */,
 				9368B55A2CB9E4910064B4FB /* Privacy */,
 				9368B5112CB8095B0064B4FB /* Images */,
@@ -330,6 +333,14 @@
 			children = (
 			);
 			path = "ChatGPT-API";
+			sourceTree = "<group>";
+		};
+		93A4B4DD2CD0375000A8B40C /* Tip */ = {
+			isa = PBXGroup;
+			children = (
+				93A4B4DE2CD0379C00A8B40C /* Tip.swift */,
+			);
+			path = Tip;
 			sourceTree = "<group>";
 		};
 		93ACBDC72CAD70C3002DC57C /* Descriptions */ = {
@@ -522,6 +533,7 @@
 				9368B5072CB407400064B4FB /* FaqView.swift in Sources */,
 				9368B5272CB95BD40064B4FB /* ImageSheetQ17View.swift in Sources */,
 				93ACBE012CAD7221002DC57C /* DescriptionQ27Q28View.swift in Sources */,
+				93A4B4DF2CD0379C00A8B40C /* Tip.swift in Sources */,
 				9368B5392CB9625B0064B4FB /* ImageSheetQ4View.swift in Sources */,
 				935C5C102C94ADC500E08BAC /* ContentView.swift in Sources */,
 				9368B51D2CB95B9D0064B4FB /* ImageSheetQ7View.swift in Sources */,

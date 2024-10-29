@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TipKit
 
 @main
 struct CleanCodeApp: App {
@@ -15,6 +16,13 @@ struct CleanCodeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                // MARK: - Tip configuration
+                .task {
+                    try? Tips.resetDatastore()
+                    try? Tips.configure([
+                        //.displayFrequency(.immediate)
+                        .datastoreLocation(.applicationDefault)])
+                }
                 // MARK: - Keeps the state of the variable isDarkMode when the color scheme is changed
                 .preferredColorScheme(isDarkMode ? .dark : .light)
         }

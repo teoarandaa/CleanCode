@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import TipKit
 
 struct ContentView: View {
     let language = Bundle.main.decode([DataSection].self, from: "data.json")
+    let moreInformationTip = MoreInformationTip()
+    let codeAnalystTip = CodeAnalystTip()
+    @State private var showSecondTip: Bool = false
     @State private var showingBottomSheet: Bool = false
     @AppStorage("isDarkMode") private var isDarkMode = false
     @AppStorage("isWelcomeSheetShowing") var isWelcomeSheetShowing: Bool = true
@@ -19,7 +23,10 @@ struct ContentView: View {
                 // MARK: - More information -> BottomSheetView()
                 Button("More information") {
                     showingBottomSheet.toggle()
+                    moreInformationTip.invalidate(reason: .actionPerformed)
+                    showSecondTip = true
                 }
+                .popoverTip(moreInformationTip)
                 
                 // MARK: - Scanner -> ScannerView()
                 NavigationLink(destination: ScannerView()) {
@@ -79,6 +86,11 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .task {
+            try? Tips.resetDatastore()
+            try? Tips.configure([
+                .datastoreLocation(.applicationDefault)])
+        }
 }
 
 // MARK: - Code for WelcomeView -> ContentView()

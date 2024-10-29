@@ -10,9 +10,12 @@ import TipKit
 
 struct ContentView: View {
     let language = Bundle.main.decode([DataSection].self, from: "data.json")
+    // MARK: - Tip constants
     let moreInformationTip = MoreInformationTip()
     let codeAnalystTip = CodeAnalystTip()
-    @State private var showSecondTip: Bool = false
+    let languageTip = LanguageTip()
+    let settingsTip = SettingsTip()
+    let othersTip = OthersTip()
     @State private var showingBottomSheet: Bool = false
     @AppStorage("isDarkMode") private var isDarkMode = false
     @AppStorage("isWelcomeSheetShowing") var isWelcomeSheetShowing: Bool = true
@@ -24,7 +27,6 @@ struct ContentView: View {
                 Button("More information") {
                     showingBottomSheet.toggle()
                     moreInformationTip.invalidate(reason: .actionPerformed)
-                    showSecondTip = true
                 }
                 .popoverTip(moreInformationTip)
                 
@@ -33,7 +35,12 @@ struct ContentView: View {
                     Text("Code analyst")
                         .foregroundStyle(.accent)
                 }
+                .popoverTip(codeAnalystTip)
                 
+                // MARK: - Language Tip
+                Section {
+                    TipView(languageTip)
+                }
                 // MARK: - Print all the languages -> ChapterView()
                 ForEach(language) { section in
                     Section(section.name) {

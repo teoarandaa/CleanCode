@@ -11,7 +11,6 @@ import TipKit
 struct ContentView: View {
     let language = Bundle.main.decode([DataSection].self, from: "data.json")
     // MARK: - Tip constants
-    let codeAnalystTip = CodeAnalystTip()
     let languageTip = LanguageTip()
     @State private var showingBottomSheet: Bool = false
     @AppStorage("isDarkMode") private var isDarkMode = false
@@ -24,14 +23,6 @@ struct ContentView: View {
                 Button("More information") {
                     showingBottomSheet.toggle()
                 }
-                
-                // MARK: - Scanner -> ScannerView()
-                NavigationLink(destination: ScannerView()) {
-                    Text("Code analyst")
-                        .foregroundStyle(.accent)
-                }
-                
-                TipView(codeAnalystTip)
                 
                 // MARK: - Language Tip
                 Section {

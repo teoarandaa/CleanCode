@@ -61,8 +61,6 @@
 		938914382CB08D1B00D2631E /* OthersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938914372CB08D1B00D2631E /* OthersView.swift */; };
 		93A0BC092CADBE86003BAF5B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A0BC082CADBE86003BAF5B /* SettingsView.swift */; };
 		93A4B4612CC7F3D700A8B40C /* Credits in Resources */ = {isa = PBXBuildFile; fileRef = 93A4B4602CC7F3D700A8B40C /* Credits */; };
-		93A4B4D42CCEC18D00A8B40C /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B4D32CCEC18D00A8B40C /* ScannerView.swift */; };
-		93A4B4D62CCEC35100A8B40C /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B4D52CCEC35100A8B40C /* ScanView.swift */; };
 		93ACBDC92CAD70F6002DC57C /* DescriptionQ1Q2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACBDC82CAD70F6002DC57C /* DescriptionQ1Q2View.swift */; };
 		93ACBDE92CAD7194002DC57C /* DescriptionQ3Q4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACBDE82CAD7194002DC57C /* DescriptionQ3Q4View.swift */; };
 		93ACBDEB2CAD71A4002DC57C /* DescriptionQ5Q6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACBDEA2CAD71A4002DC57C /* DescriptionQ5Q6View.swift */; };
@@ -157,8 +155,6 @@
 		938914372CB08D1B00D2631E /* OthersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersView.swift; sourceTree = "<group>"; };
 		93A0BC082CADBE86003BAF5B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		93A4B4602CC7F3D700A8B40C /* Credits */ = {isa = PBXFileReference; lastKnownFileType = text; path = Credits; sourceTree = "<group>"; };
-		93A4B4D32CCEC18D00A8B40C /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
-		93A4B4D52CCEC35100A8B40C /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		93ACBDC82CAD70F6002DC57C /* DescriptionQ1Q2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionQ1Q2View.swift; sourceTree = "<group>"; };
 		93ACBDE82CAD7194002DC57C /* DescriptionQ3Q4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionQ3Q4View.swift; sourceTree = "<group>"; };
 		93ACBDEA2CAD71A4002DC57C /* DescriptionQ5Q6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionQ5Q6View.swift; sourceTree = "<group>"; };
@@ -227,7 +223,6 @@
 				9368B50E2CB56EA90064B4FB /* Info.plist */,
 				93A4B4DA2CCEC86600A8B40C /* ChatGPT-API */,
 				93A4B4DD2CD0375000A8B40C /* Tip */,
-				93A4B4D22CCEC10A00A8B40C /* Scanner */,
 				9368B55A2CB9E4910064B4FB /* Privacy */,
 				9368B5112CB8095B0064B4FB /* Images */,
 				93ACBDC72CAD70C3002DC57C /* Descriptions */,
@@ -321,15 +316,6 @@
 				9368B55B2CB9E4C30064B4FB /* TermsOfUseView.swift */,
 			);
 			path = Privacy;
-			sourceTree = "<group>";
-		};
-		93A4B4D22CCEC10A00A8B40C /* Scanner */ = {
-			isa = PBXGroup;
-			children = (
-				93A4B4D32CCEC18D00A8B40C /* ScannerView.swift */,
-				93A4B4D52CCEC35100A8B40C /* ScanView.swift */,
-			);
-			path = Scanner;
 			sourceTree = "<group>";
 		};
 		93A4B4DA2CCEC86600A8B40C /* ChatGPT-API */ = {
@@ -569,13 +555,11 @@
 				93ACBDF72CAD71F5002DC57C /* DescriptionQ17Q18View.swift in Sources */,
 				9368B5192CB95B680064B4FB /* ImageSheetQ3View.swift in Sources */,
 				9368B52F2CB95BF90064B4FB /* ImageSheetQ25View.swift in Sources */,
-				93A4B4D42CCEC18D00A8B40C /* ScannerView.swift in Sources */,
 				93ACBDF32CAD71D0002DC57C /* DescriptionQ13Q14View.swift in Sources */,
 				93ACBDED2CAD71AF002DC57C /* DescriptionQ7Q8View.swift in Sources */,
 				9368B5572CB9646A0064B4FB /* ImageSheetQ32View.swift in Sources */,
 				9368B5332CB95C0D0064B4FB /* ImageSheetQ29View.swift in Sources */,
 				9368B5292CB95BDC0064B4FB /* ImageSheetQ19View.swift in Sources */,
-				93A4B4D62CCEC35100A8B40C /* ScanView.swift in Sources */,
 				9368B53D2CB962770064B4FB /* ImageSheetQ8View.swift in Sources */,
 				9363C2B02CD173AD0023CB61 /* LanguageTip.swift in Sources */,
 				9368B5472CB962C90064B4FB /* ImageSheetQ18View.swift in Sources */,

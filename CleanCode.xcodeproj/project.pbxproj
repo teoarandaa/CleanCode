@@ -22,7 +22,6 @@
 		935C5C2B2C94ADC600E08BAC /* CleanCodeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C5C2A2C94ADC600E08BAC /* CleanCodeUITestsLaunchTests.swift */; };
 		9363C2B02CD173AD0023CB61 /* LanguageTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363C2AF2CD173AD0023CB61 /* LanguageTip.swift */; };
 		9363C2B42CD173EA0023CB61 /* LanguageItemsTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363C2B32CD173EA0023CB61 /* LanguageItemsTip.swift */; };
-		9363C2BA2CD174630023CB61 /* CodeAnalystTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363C2B92CD174630023CB61 /* CodeAnalystTip.swift */; };
 		9368B5072CB407400064B4FB /* FaqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368B5062CB407400064B4FB /* FaqView.swift */; };
 		9368B5172CB81E540064B4FB /* ImageSheetQ1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368B5162CB81E540064B4FB /* ImageSheetQ1View.swift */; };
 		9368B5192CB95B680064B4FB /* ImageSheetQ3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368B5182CB95B680064B4FB /* ImageSheetQ3View.swift */; };
@@ -115,7 +114,6 @@
 		935C5C2A2C94ADC600E08BAC /* CleanCodeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCodeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9363C2AF2CD173AD0023CB61 /* LanguageTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTip.swift; sourceTree = "<group>"; };
 		9363C2B32CD173EA0023CB61 /* LanguageItemsTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageItemsTip.swift; sourceTree = "<group>"; };
-		9363C2B92CD174630023CB61 /* CodeAnalystTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeAnalystTip.swift; sourceTree = "<group>"; };
 		9368B5062CB407400064B4FB /* FaqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqView.swift; sourceTree = "<group>"; };
 		9368B50E2CB56EA90064B4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9368B5162CB81E540064B4FB /* ImageSheetQ1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSheetQ1View.swift; sourceTree = "<group>"; };
@@ -328,7 +326,6 @@
 		93A4B4DD2CD0375000A8B40C /* Tip */ = {
 			isa = PBXGroup;
 			children = (
-				9363C2B92CD174630023CB61 /* CodeAnalystTip.swift */,
 				9363C2AF2CD173AD0023CB61 /* LanguageTip.swift */,
 				9363C2B32CD173EA0023CB61 /* LanguageItemsTip.swift */,
 			);
@@ -545,7 +542,6 @@
 				9368B54B2CB962E60064B4FB /* ImageSheetQ22View.swift in Sources */,
 				9368B5352CB95C150064B4FB /* ImageSheetQ31View.swift in Sources */,
 				9368B5232CB95BBD0064B4FB /* ImageSheetQ13View.swift in Sources */,
-				9363C2BA2CD174630023CB61 /* CodeAnalystTip.swift in Sources */,
 				935C5C0E2C94ADC500E08BAC /* CleanCodeApp.swift in Sources */,
 				93ACBDFF2CAD7219002DC57C /* DescriptionQ25Q26View.swift in Sources */,
 				93ACBDF12CAD71C3002DC57C /* DescriptionQ11Q12View.swift in Sources */,

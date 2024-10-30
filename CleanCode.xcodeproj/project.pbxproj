@@ -22,8 +22,6 @@
 		935C5C2B2C94ADC600E08BAC /* CleanCodeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935C5C2A2C94ADC600E08BAC /* CleanCodeUITestsLaunchTests.swift */; };
 		9363C2B02CD173AD0023CB61 /* LanguageTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363C2AF2CD173AD0023CB61 /* LanguageTip.swift */; };
 		9363C2B42CD173EA0023CB61 /* LanguageItemsTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363C2B32CD173EA0023CB61 /* LanguageItemsTip.swift */; };
-		9363C2B62CD1742C0023CB61 /* SettingsTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363C2B52CD1742C0023CB61 /* SettingsTip.swift */; };
-		9363C2B82CD1744A0023CB61 /* OthersTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363C2B72CD1744A0023CB61 /* OthersTip.swift */; };
 		9363C2BA2CD174630023CB61 /* CodeAnalystTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9363C2B92CD174630023CB61 /* CodeAnalystTip.swift */; };
 		9368B5072CB407400064B4FB /* FaqView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368B5062CB407400064B4FB /* FaqView.swift */; };
 		9368B5172CB81E540064B4FB /* ImageSheetQ1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368B5162CB81E540064B4FB /* ImageSheetQ1View.swift */; };
@@ -65,7 +63,6 @@
 		93A4B4612CC7F3D700A8B40C /* Credits in Resources */ = {isa = PBXBuildFile; fileRef = 93A4B4602CC7F3D700A8B40C /* Credits */; };
 		93A4B4D42CCEC18D00A8B40C /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B4D32CCEC18D00A8B40C /* ScannerView.swift */; };
 		93A4B4D62CCEC35100A8B40C /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B4D52CCEC35100A8B40C /* ScanView.swift */; };
-		93A4B4DF2CD0379C00A8B40C /* MoreInformationTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4B4DE2CD0379C00A8B40C /* MoreInformationTip.swift */; };
 		93ACBDC92CAD70F6002DC57C /* DescriptionQ1Q2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACBDC82CAD70F6002DC57C /* DescriptionQ1Q2View.swift */; };
 		93ACBDE92CAD7194002DC57C /* DescriptionQ3Q4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACBDE82CAD7194002DC57C /* DescriptionQ3Q4View.swift */; };
 		93ACBDEB2CAD71A4002DC57C /* DescriptionQ5Q6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACBDEA2CAD71A4002DC57C /* DescriptionQ5Q6View.swift */; };
@@ -120,8 +117,6 @@
 		935C5C2A2C94ADC600E08BAC /* CleanCodeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCodeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9363C2AF2CD173AD0023CB61 /* LanguageTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTip.swift; sourceTree = "<group>"; };
 		9363C2B32CD173EA0023CB61 /* LanguageItemsTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageItemsTip.swift; sourceTree = "<group>"; };
-		9363C2B52CD1742C0023CB61 /* SettingsTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTip.swift; sourceTree = "<group>"; };
-		9363C2B72CD1744A0023CB61 /* OthersTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersTip.swift; sourceTree = "<group>"; };
 		9363C2B92CD174630023CB61 /* CodeAnalystTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeAnalystTip.swift; sourceTree = "<group>"; };
 		9368B5062CB407400064B4FB /* FaqView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqView.swift; sourceTree = "<group>"; };
 		9368B50E2CB56EA90064B4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -164,7 +159,6 @@
 		93A4B4602CC7F3D700A8B40C /* Credits */ = {isa = PBXFileReference; lastKnownFileType = text; path = Credits; sourceTree = "<group>"; };
 		93A4B4D32CCEC18D00A8B40C /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		93A4B4D52CCEC35100A8B40C /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
-		93A4B4DE2CD0379C00A8B40C /* MoreInformationTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInformationTip.swift; sourceTree = "<group>"; };
 		93ACBDC82CAD70F6002DC57C /* DescriptionQ1Q2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionQ1Q2View.swift; sourceTree = "<group>"; };
 		93ACBDE82CAD7194002DC57C /* DescriptionQ3Q4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionQ3Q4View.swift; sourceTree = "<group>"; };
 		93ACBDEA2CAD71A4002DC57C /* DescriptionQ5Q6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionQ5Q6View.swift; sourceTree = "<group>"; };
@@ -348,12 +342,9 @@
 		93A4B4DD2CD0375000A8B40C /* Tip */ = {
 			isa = PBXGroup;
 			children = (
-				93A4B4DE2CD0379C00A8B40C /* MoreInformationTip.swift */,
 				9363C2B92CD174630023CB61 /* CodeAnalystTip.swift */,
 				9363C2AF2CD173AD0023CB61 /* LanguageTip.swift */,
 				9363C2B32CD173EA0023CB61 /* LanguageItemsTip.swift */,
-				9363C2B52CD1742C0023CB61 /* SettingsTip.swift */,
-				9363C2B72CD1744A0023CB61 /* OthersTip.swift */,
 			);
 			path = Tip;
 			sourceTree = "<group>";
@@ -535,7 +526,6 @@
 				93ACBDF92CAD71FD002DC57C /* DescriptionQ19Q20View.swift in Sources */,
 				93ACBE032CAD722A002DC57C /* DescriptionQ29Q30View.swift in Sources */,
 				93ACBDEB2CAD71A4002DC57C /* DescriptionQ5Q6View.swift in Sources */,
-				9363C2B82CD1744A0023CB61 /* OthersTip.swift in Sources */,
 				935940C62CA201DA002AA0C9 /* Data.swift in Sources */,
 				93339C472CA59532006484CE /* ChapterView.swift in Sources */,
 				9368B52D2CB95BEF0064B4FB /* ImageSheetQ23View.swift in Sources */,
@@ -549,11 +539,9 @@
 				9368B5072CB407400064B4FB /* FaqView.swift in Sources */,
 				9368B5272CB95BD40064B4FB /* ImageSheetQ17View.swift in Sources */,
 				93ACBE012CAD7221002DC57C /* DescriptionQ27Q28View.swift in Sources */,
-				93A4B4DF2CD0379C00A8B40C /* MoreInformationTip.swift in Sources */,
 				9368B5392CB9625B0064B4FB /* ImageSheetQ4View.swift in Sources */,
 				935C5C102C94ADC500E08BAC /* ContentView.swift in Sources */,
 				9368B51D2CB95B9D0064B4FB /* ImageSheetQ7View.swift in Sources */,
-				9363C2B62CD1742C0023CB61 /* SettingsTip.swift in Sources */,
 				9368B51B2CB95B8A0064B4FB /* ImageSheetQ5View.swift in Sources */,
 				9368B5592CB9E3560064B4FB /* PrivacyView.swift in Sources */,
 				9368B5172CB81E540064B4FB /* ImageSheetQ1View.swift in Sources */,

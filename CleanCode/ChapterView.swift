@@ -10,13 +10,11 @@ import TipKit
 
 struct ChapterView: View {
     let item: DataItem
-    let languageItemsTip = LanguageItemsTip()
     @AppStorage("isDarkMode") private var isDarkMode = false
     
     // MARK: - List of every section of 1 language. It addapts the information displayed to the language the user is using -> Descriptions/DescriptionQXQYView()
     var body: some View {
         List {
-            TipView(languageItemsTip)
             NavigationLink(destination: DescriptionQ1Q2View(item: item)) {
                 Text("\(item.ask1)")
             }
@@ -73,7 +71,6 @@ struct ChapterView: View {
 #Preview {
     ChapterView(item: DataItem.example)
         .task {
-            try? Tips.resetDatastore()
             try? Tips.configure([
                 .datastoreLocation(.applicationDefault)])
         }

@@ -10,8 +10,6 @@ import TipKit
 
 struct ContentView: View {
     let language = Bundle.main.decode([DataSection].self, from: "data.json")
-    // MARK: - Tip constants
-    let languageTip = LanguageTip()
     @State private var showingBottomSheet: Bool = false
     @AppStorage("isDarkMode") private var isDarkMode = false
     @AppStorage("isWelcomeSheetShowing") var isWelcomeSheetShowing: Bool = true
@@ -20,13 +18,8 @@ struct ContentView: View {
         NavigationStack {
             List {
                 // MARK: - More information -> BottomSheetView()
-                Button("More information") {
+                Button("Legend") {
                     showingBottomSheet.toggle()
-                }
-                
-                // MARK: - Language Tip
-                Section {
-                    TipView(languageTip)
                 }
                 
                 // MARK: - Print all the languages -> ChapterView()
@@ -82,7 +75,6 @@ struct ContentView: View {
 #Preview {
     ContentView()
         .task {
-            try? Tips.resetDatastore()
             try? Tips.configure([
                 .datastoreLocation(.applicationDefault)])
         }

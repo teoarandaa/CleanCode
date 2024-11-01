@@ -21,11 +21,6 @@ struct OthersView: View {
                 Button("CleanCode Instagram") {
                     UIApplication.shared.open(URL(string: "https://www.instagram.com/cleancode.app/")!)
                 }
-                Button(action: {
-                    shareContent()
-                }) {
-                    Text("Share CleanCode")
-                }
             }
             // MARK: - Tip jar
             Section("Tip jar") {
@@ -46,18 +41,6 @@ struct OthersView: View {
     
     var appVersion: String? {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
-    }
-    
-    func shareContent() {
-        let items = ["¡CleanCode!", "https://www.apple.com/es/app-store/"]
-            
-        let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
-            
-        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-            if let topController = windowScene.windows.first?.rootViewController {
-                topController.present(activityVC, animated: true, completion: nil)
-            }
-        }
     }
 }
 

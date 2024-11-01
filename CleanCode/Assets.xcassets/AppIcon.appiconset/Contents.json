@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "cleancode_resized.png",
+      "filename" : "Group 39.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -13,7 +13,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "cleanCodeAppIcon_dark.png",
+      "filename" : "Group 40.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
@@ -25,7 +25,7 @@
           "value" : "tinted"
         }
       ],
-      "filename" : "cleancode_resized_tint.png",
+      "filename" : "Group 41.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"

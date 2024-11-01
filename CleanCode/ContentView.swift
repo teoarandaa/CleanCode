@@ -40,14 +40,6 @@ struct ContentView: View {
             }
             
             .toolbar {
-                
-                // MARK: - NavigationLink for OthersView -> OthersView()
-                ToolbarItem(placement: .topBarLeading) {
-                    NavigationLink(destination: OthersView()) {
-                        Image(systemName: "questionmark.circle")
-                    }
-                }
-                
                 // MARK: - NavigationLink for SettingsView -> SettingsView()
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink(destination: SettingsView()) {

@@ -26,8 +26,8 @@ struct SettingsView: View {
                         Text("Dark mode")
                     }
                 }
-                // MARK: - Others
-                Section("Others") {
+                // MARK: - Resources
+                Section("Resources") {
                     NavigationLink(destination: FaqView()) {
                         Text("FAQ (Frequently Asked Questions")
                     }
@@ -40,15 +40,42 @@ struct SettingsView: View {
                         Text("CleanCode Support")
                     }
                 }
+                // MARK: - Social media
+                Section("Social media") {
+                    Button("CleanCode website") {
+                        UIApplication.shared.open(URL(string: "https://www.example.com")!)
+                    }
+                    Button("CleanCode Instagram") {
+                        UIApplication.shared.open(URL(string: "https://www.instagram.com/cleancode.app/")!)
+                    }
+                }
+                // MARK: - Tip jar
+                Section("Tip jar") {
+                    Text("Nothing here... for now")
+                        .foregroundStyle(.gray)
+                }
+                // MARK: - Agreements
+                Section("Agreements") {
+                    Text("Thanks to all my friends and my girlfriend for being my support!")
+                }
+                // MARK: - Version (update from CleanCode/General/Version)
+                Section("Version") {
+                    Text(appVersion!)
+                }
             }
             .navigationTitle("Settings")
             .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
+    // MARK: - Function to send email
     func sendEmail(to address: String) {
         if let url = URL(string: "mailto:\(address)") {
             UIApplication.shared.open(url)
         }
+    }
+    // MARK: - Shows the current version
+    var appVersion: String? {
+        return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
     }
 }
 
